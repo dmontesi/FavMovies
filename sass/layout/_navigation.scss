@@ -2,7 +2,8 @@
 	&__list {
 		list-style-type: none;
 		display: flex;
-		justify-content: baseline;
+		align-items: center;
+		width: 100%;
 
 		@media (max-width: $breakpoint-tablet-portrait) {
 			flex-direction: column;
@@ -15,10 +16,10 @@
 	}
 
 	&__item {
-		padding: 1rem 1.6rem !important;
 		margin-right: auto;
-		&:not(:last-child) {
+		&:not(:last-of-type) {
 			margin-right: 1.5rem;
+			padding: 1rem 1.6rem !important;
 		}
 
 		&:nth-of-type(1) {
