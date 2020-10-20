@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>All Time Favs</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<section class="section">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="brand" href="#">All Time Favs</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#films">Films</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#tvshows">TV Shows</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div id="films">
+					<section id="films-post" class="cards"></section>
+
+					<template id="post-template">
+						<div class="card">
+							<a class="card__link icon" target="_blank">
+								<img
+									class="card__img fade"
+									loading="lazy"
+									width="300"
+									height="200"
+								/>
+								<div class="card__content">
+									<h2 class="card__title"></h2>
+									<p class="card__director"></p>
+									<div class="card__detail">
+										<p class="card__country"></p>
+										<p class="card__year"></p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</template>
+				</div>
+
+				<div id="tvshows">
+					<section id="tv-post" class="cards"></section>
+
+					<template id="post-template-2">
+						<div class="card">
+							<a class="card__link icon" target="_blank">
+								<img
+									class="card__img fade"
+									loading="lazy"
+									width="300"
+									height="200"
+								/>
+								<div class="card__content">
+									<h2 class="card__title"></h2>
+									<p class="card__director"></p>
+									<div class="card__detail">
+										<p class="card__country"></p>
+										<p class="card__year"></p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</template>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<p class="">Content from imbd.com</p>
+		</footer>
+
+		<script src="js/main.js" async defer></script>
+	</body>
+</html>

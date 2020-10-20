@@ -1,0 +1,16 @@
+// .title {
+// 	// margin-top:
+// }
+
+a:link,
+a:visited {
+	text-decoration: none !important;
+}
+
+.icon::before {
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,40 @@
+$breakpoint-wide: 1600px;
+$breakpoint-laptop: 1280px;
+$breakpoint-large: 1200px;
+$breakpoint-tablet: 1024px;
+$breakpoint-tablet-portrait: 768px;
+$breakpoint-mobile-max-landscape: 812px;
+$breakpoint-mobile-max: 414px;
+$breakpoint-mobile-min: 374px;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $font-primary;
+	font-size: $default-font-size;
+	background-image: linear-gradient(to bottom, $gray-800, $gray-700);
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 144rem;
+	margin: 2.5rem auto;
+	padding: 2rem 0;
+}
