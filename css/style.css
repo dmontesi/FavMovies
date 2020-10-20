@@ -107,9 +107,11 @@ footer {
 .nav__list {
   list-style-type: none;
   display: flex;
-  justify-content: baseline; }
+  align-items: center;
+  width: 100%; }
   @media (max-width: 768px) {
     .nav__list {
+      justify-content: center;
       flex-direction: column;
       padding-left: 5rem; } }
   @media (max-width: 414px) {
@@ -117,10 +119,16 @@ footer {
       padding-left: 3rem; } }
 
 .nav__item {
-  padding: 1rem 1.6rem !important;
   margin-right: auto; }
-  .nav__item:not(:last-child) {
-    margin-right: 1.5rem; }
+  @media (max-width: 768px) {
+    .nav__item {
+      margin: 0 auto; } }
+  .nav__item:not(:last-of-type) {
+    margin-right: 1.5rem;
+    padding: 1rem 1.6rem !important; }
+    @media (max-width: 768px) {
+      .nav__item:not(:last-of-type) {
+        margin: 0 auto; } }
   .nav__item:nth-of-type(1) {
     margin-right: auto;
     font-weight: bold; }
