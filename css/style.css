@@ -104,7 +104,7 @@ a:visited {
   .card__detail {
     opacity: 0;
     margin-top: 2rem;
-    transform: translateY(45px);
+    transform: translateY(35px);
     transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
     .card__detail > p {
       font-size: 1.6rem;
