@@ -92,7 +92,7 @@ a:visited {
       font-size: 1.6rem; }
   .card__img {
     min-width: 100%; }
-  .card__movie {
+  .card__movie, .card__show {
     transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transform: translateY(35px); }
   .card__title {
@@ -109,8 +109,10 @@ a:visited {
     .card__detail > p {
       font-size: 1.6rem;
       color: #f2f5f8; }
-  .card__director {
+  .card__director, .card__creators {
     color: #d4d7dd; }
+  .card__year {
+    margin-top: auto; }
 
 footer {
   background-color: black;

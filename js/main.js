@@ -19,7 +19,7 @@ async function getMovies(searchTerm) {
 	posts.forEach((post) => {
 		i++;
 		if (i > 0) {
-			fetch('https://unsplash.it/400/400')
+			fetch('https://unsplash.it/400')
 				.then((res) => res.blob())
 				.then((blob) => {
 					const movie = post.Title;
@@ -60,11 +60,11 @@ async function getShows() {
 	posts.forEach((post) => {
 		i++;
 		if (i > 0) {
-			fetch('https://unsplash.it/300/200')
+			fetch('https://unsplash.it/400')
 				.then((res) => res.blob())
 				.then((blob) => {
 					const movie = post.Title;
-					const director = post.Directors;
+					const creator = post.Creators;
 					const country = post.Genres;
 					const link = post.URL;
 					const year = post.Year;
@@ -72,7 +72,7 @@ async function getShows() {
 
 					const newPost = document.importNode(postTemplate2.content, true);
 					const postTitle = newPost.querySelector('.card__title');
-					const postBody = newPost.querySelector('.card__director');
+					const postBody = newPost.querySelector('.card__creators');
 					const postYear = newPost.querySelector('.card__year');
 					const postURL = newPost.querySelector('.card__link');
 					const postCountry = newPost.querySelector('.card__country');
@@ -81,7 +81,7 @@ async function getShows() {
 
 					postImg.src = URL.createObjectURL(blob);
 					postTitle.innerText = movie;
-					postBody.innerText = director;
+					postBody.innerText = creator;
 					postURL.href = link;
 					postYear.innerText = year;
 					postCountry.innerText = country;

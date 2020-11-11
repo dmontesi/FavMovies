@@ -81,7 +81,8 @@
 		min-width: 100%;
 	}
 
-	&__movie {
+	&__movie,
+	&__show {
 		transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 		transform: translateY(35px);
 	}
@@ -100,13 +101,20 @@
 		transform: translateY(35px);
 		transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
+		// display: flex;
+
 		& > p {
 			font-size: 1.6rem;
 			color: $gray-200;
 		}
 	}
 
-	&__director {
+	&__director,
+	&__creators {
 		color: $gray-400;
+	}
+
+	&__year {
+		margin-top: auto;
 	}
 }
