@@ -19,7 +19,7 @@ async function getMovies(searchTerm) {
 	posts.forEach((post) => {
 		i++;
 		if (i > 0) {
-			fetch('https://unsplash.it/400/300')
+			fetch('https://unsplash.it/400/400')
 				.then((res) => res.blob())
 				.then((blob) => {
 					const movie = post.Title;

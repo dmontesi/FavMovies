@@ -12,7 +12,7 @@ $breakpoint-mobile-min: 374px;
 *::after {
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 html {
@@ -24,7 +24,6 @@ body {
 	font-family: $font-primary;
 	font-size: $default-font-size;
 	background-image: linear-gradient(to bottom, $gray-800, $gray-700);
-	box-sizing: border-box;
 }
 
 img {
