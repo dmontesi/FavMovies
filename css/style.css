@@ -76,7 +76,9 @@ a:visited {
     justify-content: flex-end;
     align-items: center;
     padding-right: 2rem; }
-  .card__link:hover .card__movie, .card__link:active .card__movie {
+  .card__link:hover .card__movie,
+  .card__link:hover .card__show, .card__link:active .card__movie,
+  .card__link:active .card__show {
     transform: translateY(0); }
   .card__link:hover .card__detail, .card__link:active .card__detail {
     opacity: 1;
